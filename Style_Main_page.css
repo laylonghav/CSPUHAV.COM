@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap");
+* {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Main_menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+}
+.heading {
+  background-color: rgb(51, 94, 204);
+}
+.box {
+  position: relative;
+  width: 33%;
+  height: 100px;
+}
+.box_heading {
+  display: flex;
+  justify-content: space-between;
+}
+.tile_heading {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  color: #ffffff;
+  /* font-weight: bold; */
+}
+.head_title {
+  font-weight: normal;
+}
+.logo_personal {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.btn_seemore {
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+  /* font-weight: bold; */
+}
+.box_Memu {
+  position: relative;
+  width: 33%;
+  height: 60px;
+  font-weight: bold;
+}
+.logo_name {
+  width: 210px;
+  height: 50px;
+  cursor: pointer;
+  /* margin-left: 35px; */
+  /* object-fit: cover; */
+}
+.offcanvas-body,
+.btn-close {
+  font-size: 20px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .heading {
+    font-size: 11px;
+    font-weight: bold;
+  }
+  .head_title {
+    font-size: 10px;
+  }
+  .logo_personal {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  .btn_seemore {
+    width: 110px;
+    height: 27px;
+    font-size: 7.5px;
+  }
+  .logo_name {
+    width: 140px;
+    height: 32px;
+    /* object-fit: cover; */
+  }
+  .box {
+    position: relative;
+    width: 33%;
+    height: 85px;
+  }
+  .box {
+    position: relative;
+    width: 33%;
+    height: 51px;
+  }
+  .tile_heading {
+    position: absolute;
+    top: 10px;
+  }
+  .long_website {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+  }
+  .btn_study {
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+  }
+  .Slide {
+    width: 660px;
+    height: 258px;
+  }
+  .long_website {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .btn_study {
+    height: 45px;
+    width: 110px;
+    font-size: 12px;
+  }
+  .Slide,
+  .YB {
+    width: 560px;
+    height: 230px;
+  }
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .head_title {
+    font-size: 12px;
+  }
+  .logo_personal {
+    width: 58px;
+    height: 58px;
+    object-fit: cover;
+  }
+  .btn_seemore {
+    width: 90px;
+    height: 32px;
+    font-size: 11px;
+    position: absolute;
+    right: 20px;
+  }
+  .fa-solid {
+    display: none;
+  }
+  .logo_name {
+    width: 150px;
+    height: 35px;
+    /* object-fit: cover; */
+  }
+  .box {
+    position: relative;
+    width: 33%;
+    height: 65px;
+  }
+  .long_website {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+  }
+  .btn_study {
+    height: 50px;
+    width: 120px;
+    font-size: 15px;
+  }
+  .Slide,
+  .YB {
+    width: 660px;
+    height: 258px;
+  }
+}
+
+/*Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .heading {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .head_title {
+    font-size: 15px;
+  }
+  .logo_personal {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+  .btn_seemore {
+    width: 100px;
+    height: 37px;
+    font-size: 12px;
+    position: relative;
+  }
+  .More {
+    display: none;
+  }
+  .fa-solid {
+    display: none;
+  }
+  .logo_name {
+    width: 160px;
+    height: 38px;
+    /* object-fit: cover; */
+  }
+  .box {
+    position: relative;
+    width: 33%;
+    height: 75px;
+  }
+  .long_website {
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+  }
+  .btn_study {
+    height: 55px;
+    width: 125px;
+  }
+  .txt_web {
+    font-size: 18px;
+  }
+  .Slide,
+  .YB {
+    width: 860px;
+    height: 358px;
+  }
+}
+
+/*X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .heading {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .head_title {
+    font-size: 20px;
+  }
+  .logo_personal {
+    width: 68px;
+    height: 68px;
+    object-fit: cover;
+  }
+  .btn_seemore {
+    width: 125px;
+    height: 42px;
+    font-size: 18px;
+  }
+  .More {
+    display: none;
+  }
+  .fa-solid {
+    display: none;
+  }
+  .logo_name {
+    width: 175px;
+    height: 38px;
+    /* object-fit: cover; */
+  }
+  .box {
+    position: relative;
+    width: 33%;
+    height: 85px;
+  }
+  .long_website {
+    width: 500px;
+    height: 450px;
+    object-fit: cover;
+  }
+  .btn_study {
+    height: 56px;
+    width: 130px;
+  }
+  .txt_web {
+    font-size: 20px;
+  }
+  .Slide,
+  .YB {
+    width: 960px;
+    height: 458px;
+  }
+}
+
+/*XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .heading {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .head_title {
+    font-size: 25px;
+  }
+  .logo_personal {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
+  .btn_seemore {
+    width: 130px;
+    height: 48px;
+    font-size: 20px;
+  }
+  .More {
+    display: none;
+  }
+  .fa-solid {
+    display: none;
+  }
+  .logo_name {
+    width: 190px;
+    height: 40px;
+    /* object-fit: cover; */
+  }
+  .box {
+    position: relative;
+    width: 33%;
+    height: 100px;
+  }
+  .txt_stady {
+    font-size: 40px;
+  }
+  .txt_website {
+    font-size: 20px;
+  }
+  .Wieght {
+    height: 83vh;
+  }
+  .long_website {
+    width: 600px;
+    height: 650px;
+    object-fit: cover;
+  }
+  .btn_study {
+    height: 60px;
+    width: 200px;
+  }
+  .Slide,
+  .YB {
+    width: 1060px;
+    height: 558px;
+  }
+}
+
+/*`sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .heading {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .head_title {
+    font-size: 10px;
+  }
+  .tile_heading {
+    position: absolute;
+    top: 8px;
+  }
+  .logo_personal {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    position: absolute;
+    left: 10px;
+  }
+  .btn_seemore {
+    width: 105px;
+    height: 22px;
+    font-size: 5.5px;
+  }
+  .logo_name {
+    width: 130px;
+    height: 30px;
+    /* object-fit: cover; */
+  }
+  .box {
+    position: relative;
+    width: 33%;
+    height: 50px;
+  }
+  .long_website {
+    width: 270px;
+    height: 200px;
+    margin: 2px 0 0 0;
+    height: 250px;
+    object-fit: cover;
+  }
+  .btn_study {
+    height: 45px;
+    width: 110px;
+    font-size: 12px;
+  }
+  .txt_website {
+    font-size: 12px;
+  }
+  .Slide,
+  .YB {
+    width: 380px;
+    height: 200px;
+  }
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .btn_seemore {
+    display: none;
+  }
+  .fa-solid {
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+  }
+}
+
+/*`lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .login {
+    display: none;
+  }
+  .More {
+    position: absolute;
+    top: 8px;
+    right: -15px;
+    font-size: 30px;
+  }
+  .logo_personal {
+    position: absolute;
+    left: 10px;
+  }
+}
+
+/*`xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/*`xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  .nav {
+    display: none;
+  }
+}
+
+.Next {
+  color: black;
+}
+.footer {
+  color: white;
+}
+.logo_footer {
+  width: 60px;
+  height: 60px;
+}
+.fa-brands {
+  font-size: 30px;
+  margin-right: 15px;
+  color: white;
+}
