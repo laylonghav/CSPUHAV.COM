@@ -6,9 +6,12 @@
   box-sizing: border-box;
 }
 .Main_menu {
+  position: relative;
+  z-index: 1;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   height: 60px;
   background-color: rgb(255, 255, 255);
 }
@@ -112,10 +115,6 @@
     width: 100px;
     font-size: 20px;
   }
-  .Slide {
-    width: 660px;
-    height: 258px;
-  }
   .long_website {
     width: 250px;
     height: 200px;
@@ -128,8 +127,8 @@
   }
   .Slide,
   .YB {
-    width: 560px;
-    height: 230px;
+    width: 470px;
+    height: 290px;
   }
   .More {
     position: absolute;
@@ -184,8 +183,8 @@
   }
   .Slide,
   .YB {
-    width: 660px;
-    height: 258px;
+    width: 750px;
+    height: 395px;
   }
   .More {
     position: absolute;
@@ -242,8 +241,8 @@
   }
   .Slide,
   .YB {
-    width: 860px;
-    height: 358px;
+    width: 960px;
+    height: 490px;
   }
 }
 
@@ -294,7 +293,7 @@
   .Slide,
   .YB {
     width: 960px;
-    height: 458px;
+    height: 500px;
   }
 }
 
@@ -410,14 +409,18 @@
   }
   .Slide,
   .YB {
-    width: 380px;
-    height: 200px;
+    width: 350px;
+    height: 180px;
   }
   .More {
     position: absolute;
     top: 8px;
     right: -15px;
     font-size: 30px;
+  }
+  .footer {
+    font-size: 12px;
+    text-align: center;
   }
 }
 
@@ -442,26 +445,36 @@
     position: absolute;
     left: 10px;
   }
-  .nav {
+  .a {
     display: none;
+  }
+  .below_footer {
+    text-align: center;
+    width: 183vh;
+  }
+  .seemore {
+    position: absolute;
+    top: 10px;
+    right: 15px;
   }
 }
 
 /*`xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-  .nav {
-    font-size: 10px;
-  }
 }
 
 /*`xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
+  .a {
+    font-size: 10px;
+  }
 }
 .Next {
   color: black;
 }
 .footer {
   color: white;
+  font-style: normal;
 }
 .logo_footer {
   width: 60px;
@@ -475,4 +488,68 @@
 .index {
   position: relative;
   z-index: -1;
+}
+.Study {
+  color: white;
+  text-decoration: none;
+}
+.Message_box {
+  margin: 0px;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 80px;
+}
+.align {
+  margin: 0px;
+  display: flex;
+  float: right;
+}
+.MSG {
+  padding-top: 15px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  height: 64px;
+}
+.cnt {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+.btn_help .btn_Open {
+  cursor: pointer;
+  width: 100%;
+}
+.btn_help {
+  width: 100%;
+  height: 100%;
+}
+.above,
+.below,
+.btn_Open {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+.btn_Insta,
+.btn_Tik,
+.btn_Fac,
+.btn_Tele {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+
+}
+.btnOnline {
+  border: 1px solid white;
+}
+.link {
+  text-decoration: none;
+}
+.font_size_btn {
+  width: 95%;
+  font-size: 12px;
 }
