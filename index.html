@@ -1,38 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conputer science</title>
-    <link rel="icon" href="../Video/Image/logo_personal.png" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./Style_Main_page.css" />
+    <link href="../Video/Image/logo_personal.png" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="../CSS/Style_Main_page.css" rel="stylesheet">
+    <link href="../CSS/Style_See_more.css" rel="stylesheet">
+    <link href="../CSS/Style_courses.css" rel="stylesheet">
+    <link href="../CSS/Style_Resources.css" rel="stylesheet">
+    <link href="../CSS/Style_about.css" rel="stylesheet">
+    <link href="../CSS/Style_contact.css" rel="stylesheet">
   </head>
   <body>
     <div class="heading container-fluid d-flex justify-content-between">
       <div class="box d-flex justify-content-center align-items-center">
-        <img
-          class="logo_personal"
-          src="logo_personal.png"
-          alt="logopersonal"
-        />
+        <img class="logo_personal" src="../Video/Image/logo_personal.png" alt="logopersonal">
       </div>
       <div class="d-flex justify-content-center align-items-center">
         <div class="tile_heading text-center">
@@ -44,125 +30,93 @@
           </div>
         </div>
       </div>
-      <div class="box d-flex justify-content-center align-items-center">
-        <button type="button" class="btn_seemore btn btn-outline-danger">
-          See more
-        </button>
-        <i class="fa-solid fa-circle-info"></i>
+      <div class="box d-flex justify-content-center align-items-center">           
+              <a class="seemore" id="Seemore" href="#See_more" target>
+                <button class="btn_seemore btn btn-outline-danger" type="button"> 
+                  See more
+                </button> 
+                <i class="fa-solid fa-circle-info text-light"></i>  
+              </a>          
+        <a class="text-light" id="1Seemore" href="#See_more" title="More" target></a>
       </div>
     </div>
-    <div
-      class="Main_menu container-fluid position-sticky d-flex justify-content-between"
-    >
-      <div
-        class="box_Memu my-1 d-flex justify-content-center align-items-center"
-      >
-        <img
-          class="logo_name"
-          src="logo_name.png"
-          alt="logoname"
-        />
+    <div class="Main_menu container-fluid position-sticky d-flex justify-content-between">
+      <div class="box_Memu my-1 d-flex justify-content-center align-items-center">
+        <img class="logo_name" src="../Video/Image/logo_name.png" alt="logoname">
       </div>
-      <div class="box_Memu d-flex justify-content-center align-items-center">
-        <ul class="nav nav-pills" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-bs-toggle="pill" href="#home"
-              >Home</a
-            >
+      <div class="index d-flex justify-content-center align-items-center">
+        <ul class="nav nav-pills" id="Active" role="tablist">
+          <li class="a nav-item">
+            <a class="nav-link active" id="H" data-bs-toggle="pill" href="#home">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="pill" href="#Courses"
-              >Courses</a
-            >
+          <li class="a nav-item">
+            <a class="nav-link" id="Cou" data-bs-toggle="pill" href="#Courses">Courses</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="pill" href="#Resources"
-              >Resources</a
-            >
+          <li class="a nav-item">
+            <a class="nav-link" id="R" data-bs-toggle="pill" href="#Resources">Resources</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="pill" href="#Abouts">About</a>
+          <li class="a nav-item">
+            <a class="nav-link" id="A" data-bs-toggle="pill" href="#About">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="pill" href="#Contact"
-              >Contact</a
-            >
+          <li class="a nav-item">
+            <a class="nav-link" id="Con" data-bs-toggle="pill" href="#Contact">Contact</a>
           </li>
         </ul>
       </div>
-
       <div class="box_Memu d-flex justify-content-center align-items-center">
         <div class="login dropdown">
-          <button
-            class="btn border-0 btn-bg-light dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
+          <button class="btn border-0 btn-bg-light dropdown-toggle" data-bs-toggle="dropdown" type="button" aria-expanded="false">
             EN
           </button>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">KH</a></li>
           </ul>
         </div>
-        <button
-          type="button"
-          class="login btn btn-outline-primary border-2 mx-2"
-        >
+        <a href="../HTML/Validation/index.html" target="_blank">
+            <button class="login btn btn-outline-primary border-2 mx-2" type="button">
           Log in
         </button>
-        <button type="button" class="login btn btn-primary primary border-2">
+        </a>       
+        <a href="../HTML/Validation/index.html" target="_blank">
+        <button class="login btn btn-primary primary border-2" type="button">
           Start for free
         </button>
-        <div class="More m-2 text-center">
-          <i
-            class="fa-solid fa-bars"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#demo"
-          ></i>
-          <div class="offcanvas offcanvas-end" id="demo">
+      </a>
+        <div class="index2 More m-2 text-center">
+          <i class="fa-solid fa-bars" id="OFF" data-bs-target="#demo" data-bs-toggle="offcanvas"></i>
+          <div class=" offcanvas offcanvas-end" id="demo">
             <div class="offcanvas-header">
               <h1 class="offcanvas-title">
-                <img
-                  class="logo_name"
-                  src="logo_name.png"
-                  alt="logoname"
-                />
+                <img class="logo_name" src="../Video/Image/logo_name.png" alt="logoname">
               </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                title="more"
-              ></button>
+              <button class="btn-close" id="Turn" data-bs-dismiss="offcanvas" type="button" title="more"></button>
             </div>
-            <div class="offcanvas-body">
-              <p>Home</p>
-              <p>Courses</p>
-              <p>Resources</p>
-              <p>About</p>
-              <p>Contact</p>
+            <div class="offcanvas-body">             
+              <!-- Nav pills -->
+               <ul class="nav nav-pills d-flex justify-content-center " id="1Active" role="tablist">
+                  <li class="nav-item">
+                    <a class="ab nav-link active" id="1H" data-bs-toggle="pill" href="#home">Home</a>
+                    <a class="ab nav-link" id="1Cou" data-bs-toggle="pill" href="#Courses">Courses</a>
+                    <a class="ab nav-link" id="1R" data-bs-toggle="pill" href="#Resources">Resources</a>
+                    <a class="ab nav-link" id="1A" data-bs-toggle="pill" href="#About">About</a>
+                    <a class="ab nav-link" id="1Con" data-bs-toggle="pill" href="#Contact">Contact</a>
+                  </li>
+                </ul>
               <div class="dropdown">
-                <button
-                  class="btn border-0 btn-bg-light dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button class="btn border-0 btn-bg-light dropdown-toggle" data-bs-toggle="dropdown" type="button" aria-expanded="false">
                   EN
                 </button>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">KH</a></li>
                 </ul>
               </div>
-              <button
-                type="button"
-                class="my-3 btn btn-outline-primary border-2 mx-2"
-              >
-                Log in
-              </button>
+              <a href="../HTML/Validation/index.html">
+            <button class="btn btn-outline-primary border-2 mx-2" type="button">
+            Log in
+            </button>
+            </a>
               <div class="my-3">
-                <button type="button" class="btn btn-primary primary border-2">
+                <button class="btn btn-primary primary border-2" type="button">
                   Start for free
                 </button>
               </div>
@@ -172,16 +126,14 @@
       </div>
     </div>
     <!-- Tab panes -->
-    <div class="tab-content">
+    <div class="tab-content pos">
       <div class="tab-pane active" id="home">
         <div class="Wieght container-fluid bg-secondary-subtle">
           <div class="row">
-            <div
-              class="col-xl-6 col-sm-12 d-flex justify-content-center align-items-center"
-            >
+            <div class="col-xl-6 col-sm-12 d-flex justify-content-center align-items-center">
               <div>
                 <h1 class="txt_stady text-primary">
-                  Free website learning for <br />
+                  Free website learning for <br>
                   students
                 </h1>
                 <h4 class="txt_website text-secondary">
@@ -190,97 +142,43 @@
                 <h4 class="txt_website text-secondary">
                   Create your own student right now :)
                 </h4>
-                <button class="btn_study btn btn-primary" type="submit">
-                  <b class="txt_web">Study</b>
-                </button>
+                    <a class="Study" href="https://t.me/laylonghav" title="Opens in a new window" rel="noopener" target="_blank">
+                    <button class="txt_web btn_study btn btn-primary" type="submit">Study</button>
+                  </a>
               </div>
             </div>
-            <div
-              class="col-xl-6 col-sm-12 d-flex justify-content-center align-items-center"
-            >
-              <img
-                class="long_website"
-                src="long_website.png"
-                alt=""
-              />
+            <div class="col-xl-6 col-sm-12 d-flex justify-content-center align-items-center">
+              <img class="long_website" src="../Video/Image/long_website.png" alt>
             </div>
           </div>
         </div>
         <div class="container-fluid">
           <div class="row">
-            <div
-              class="col-sm-12 d-flex justify-content-center align-items-center"
-            >
+            <div class="col-sm-12 d-flex justify-content-center align-items-center">
               <h1 class="my-5 text-center">
                 Free website learning for students
               </h1>
             </div>
-            <div
-              class="col-sm-12 d-flex justify-content-center align-items-center"
-            >
-              <div class="Slide index">
-                <div
-                  id="carouselExampleInterval"
-                  class="carousel slide"
-                  data-bs-ride="carousel"
-                >
+            <div class="col-sm-12 d-flex justify-content-center align-items-center">
+              <div class="Slide" id="Slide">
+                <div class="carousel slide" id="carouselExampleInterval" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10">
-                      <iframe
-                        class="YB"
-                        width="1060"
-                        height="558"
-                        src="https://www.youtube.com/embed/NbVPy7SzOKw?si=1W8cMSR2jENSvqIB"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allowfullscreen
-                      ></iframe>
+                      <iframe class=" YB" src="https://www.youtube.com/embed/NbVPy7SzOKw?si=1W8cMSR2jENSvqIB" title="YouTube video player" width="1060" height="558" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="carousel-item" data-bs-interval="20">
-                      <iframe
-                        class="YB"
-                        width="1060"
-                        height="558"
-                        src="https://www.youtube.com/embed/l9PUvWCCqr0?si=tlF9JAJnF6MAGhyT"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allowfullscreen
-                      ></iframe>
+                      <iframe class="YB" src="https://www.youtube.com/embed/l9PUvWCCqr0?si=tlF9JAJnF6MAGhyT" title="YouTube video player" width="1060" height="558" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="carousel-item">
-                      <iframe
-                        class="YB"
-                        width="1060"
-                        height="558"
-                        src="https://www.youtube.com/embed/pSf6GO010RI?si=qxWTlCoqckPjQXy7"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allowfullscreen
-                      ></iframe>
+                      <iframe class="YB" src="https://www.youtube.com/embed/pSf6GO010RI?si=qxWTlCoqckPjQXy7" title="YouTube video player" width="1060" height="558" frameborder="0" allowfullscreen></iframe>
                     </div>
                   </div>
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
+                  <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleInterval" type="button">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                   </button>
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
+                  <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleInterval" type="button">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
@@ -288,99 +186,294 @@
             </div>
           </div>
         </div>
-        <div
-          class="container-fluid mt-5 d-flex justify-content-center align-items-center bg-primary footer"
-        >
-          <div class="row container">
-            <div class="col-lg-4 col-md-6 col-sm-12 p-1 mt-3">
-              <img
-                class="logo_footer"
-                src="logo_personal.png"
-                alt=""
-              />
-              <p>© All rights reserved by Computer science 2024<br /></p>
-              <b
-                >Privacy Policy
-                <p class="mt-3">
-                  Address: <br />
-                  Building 308, Monivong Blvd, Sangkat Boeung Reang, Khan Daun
-                  Penh
-                </p>
-              </b>
+      </div>
+      <div class="tab-pane container-fluid fade" id="Courses">
+        <div class="text-center mt-5"><h2><b>Java Courses</b></h2></div>
+        <div class="container-fluid">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-xxl-4 col-md-6 col-ms-12  mt-5 d-flex justify-content-center align-items-center">
+              <iframe class="shadow  Video_Course" src="https://www.youtube.com/embed/IZ4U25XcRXg?si=XMb918mVM1rziMb3" title="YouTube video player" width="560" height="290" allowfullscreen></iframe>
+            </div> 
+            <div class="col-xxl-4 col-md-6 col-ms-12  mt-5 d-flex justify-content-center align-items-center">
+            <iframe class="shadow Video_Course"  src="https://www.youtube.com/embed/NQXPTfBN3qg?si=tpDzPXBKhEzjvRk8" title="YouTube video player" width="560" height="290" frameborder="0" allowfullscreen></iframe> 
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 p-1 mt-3">
-              <b>
-                <h1>About us</h1>
-                <p>
-                  Computer science Digital Corporation is a leading learning
-                  information. More information<br /><br />
-                  Computer science Courses and Services
-                </p>
-                <p>Home | Courses | Resources | About | Contact</p>
-              </b>
+            <div class="col-xxl-4 col-md-6 col-ms-12  mt-5 d-flex justify-content-center align-items-center">
+              <iframe  class="shadow  Video_Course" src="https://www.youtube.com/embed/f0bfPbm9mjY?si=3_Lp5RR9H9Tk3CH4" title="YouTube video player" width="560" height="290" frameborder="0" allowfullscreen></iframe>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 p-1 mt-3">
-              <h1>On social media</h1>
-              <br />
-              <a
-                rel="noopener"
-                href="https://www.facebook.com/laylonghav?mibextid=ZbWKwL"
-                target="_blank"
-                title="Opens in a new window"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
-              <a
-                rel="noopener"
-                href="https://www.facebook.com/laylonghav?mibextid=ZbWKwL"
-                target="_blank"
-                title="Opens in a new window"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a
-                rel="noopener"
-                href="https://youtube.com/@LayLonghav?si=LT-WCdQpGRZFZsPI"
-                target="_blank"
-                title="Opens in a new window"
-                ><i class="fa-brands fa-youtube"></i
-              ></a>
-              <a
-                rel="noopener"
-                href="https://www.tiktok.com/@cspuhav?is_from_webapp=1&sender_device=pc"
-                target="_blank"
-                title="Opens in a new window"
-                ><i class="fa-brands fa-tiktok"></i
-              ></a>
-              <a
-                rel="noopener"
-                href="https://t.me/laylonghavCS"
-                target="_blank"
-                title="Opens in a new window"
-                ><i class="fa-brands fa-telegram"></i
-              ></a>
-              <a
-                rel="noopener"
-                href="https://github.com/laylonghav"
-                target="_blank"
-                title="Opens in a new window"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <br />
-              <br />
-              <b>Contact</b><br />
-              <p>
-                <a href="mailto:laylonghav2023@Gmail.com" data-action="email"
-                  ><span class="footer">laylonghav2023@Gmail.com</span></a
-                >
-                <br />0979 266 010
-              </p>
+
+            <div class="col-xxl-4 col-md-6 col-ms-12  mt-5 d-flex justify-content-center align-items-center">
+              <iframe class="shadow  Video_Course"  src="https://www.youtube.com/embed/m1bvmprzSC4?si=20L4eFUd2hzddF2T" title="YouTube video player" width="560" height="290" allowfullscreen></iframe>
+            </div> 
+            <div class="col-xxl-4 col-md-6 col-ms-12  mt-5 d-flex justify-content-center align-items-center">
+             <iframe class="shadow  Video_Course"  src="https://www.youtube.com/embed/OrRikL2ly48?si=HwI-b4BQcOyG0JwU" title="YouTube video player" width="560" height="290" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="col-xxl-4 col-md-6 col-ms-12  mt-5 d-flex justify-content-center align-items-center">
+              <iframe class="shadow  Video_Course"  src="https://www.youtube.com/embed/E4B-dyPHoBQ?si=-NJaKvherTPLRzoz" title="YouTube video player" width="560" height="290" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="col-xxl-4 col-md-6 col-ms-12  mt-5 d-flex justify-content-center align-items-center">
+              <iframe class="shadow  Video_Course"  src="https://www.youtube.com/embed/kl-xogPXjmQ?si=NaDJXfwjH9D4Iw4u" title="YouTube video player" width="560" height="290" frameborder="0" allowfullscreen></iframe>
+            </div> 
+            <div class="col-xxl-4 col-md-6 col-ms-12  mt-5 d-flex justify-content-center align-items-center">
+             <iframe class="shadow  Video_Course"  src="https://www.youtube.com/embed/xzyYCQQDKiM?si=LHbcH-kYKP6vJH14" title="YouTube video player" width="560" height="290" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="col-xxl-4 col-md-6 col-ms-12  mt-5 d-flex justify-content-center align-items-center">
+              <iframe class="shadow  Video_Course"  src="https://www.youtube.com/embed/pSf6GO010RI?si=X2cIXeC_hldSDQU-" title="YouTube video player" width="560" height="290" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+
+            <div class="col-xxl-4 col-md-6 col-ms-12  mt-5 d-flex justify-content-center align-items-center">
+              <iframe  class="shadow  Video_Course" src="https://www.youtube.com/embed/l9PUvWCCqr0?si=3WQ9zqO0Lbn4uYWl" title="YouTube video player" width="560" height="290" allowfullscreen></iframe>
+            </div> 
+            <div class="col-xxl-4 col-md-6 col-ms-12  mt-5 d-flex justify-content-center align-items-center">
+             <iframe  class="shadow  Video_Course" src="https://www.youtube.com/embed/-wyMWKHWciY?si=cxYeuHyGyEgCgWHx" title="YouTube video player" width="560" height="290" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="col-xxl-4 col-md-6 col-ms-12  mt-5 d-flex justify-content-center align-items-center">
+              <iframe class="shadow  Video_Course"  src="https://www.youtube.com/embed/NbVPy7SzOKw?si=MffoWK8V1y7YRbVe" title="YouTube video player" width="560" height="290" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </div>
-      <div class="tab-pane container fade" id="Courses"></div>
-      <div class="tab-pane container fade" id="Resources"></div>
-      <div class="tab-pane container fade" id="Abouts"></div>
-      <div class="tab-pane container fade" id="Contact"></div>
+      <div class="tab-pane container-fluid fade" id="Resources">
+        <div class="text-center  mt-3 text-primary"><h1>About Resources</h1></div><br>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xxl-4 col-md-6 col-ms-12 p-1 mt-3 d-flex justify-content-center align-items-center">
+              <div class="box_Resources card border-0 shadow" style="width: 28rem; ">
+                <img class="card-img-top picRecourse" src="https://www.arageek.com/_next/image?url=https%3A%2F%2Fcdn.arageek.com%2Fmagazine%2F2021%2F04%2Fencyclopedia-%D9%85%D8%A7-%D9%87%D9%8A-HTML.jpg&w=3840&q=75" alt="..." height="350px" width="200px">
+               <div class="card-body">
+              <h5 class="card-title">Ebook HTML</h5>
+                <p class="card-text">Programming language for web Development.</p>
+                <a class="btn btn-primary " href="https://youtube.com/@LayLonghav?si=OGdJLdy-HdiHGW9m" target="_blank">View</a>
+                 </div>
+            </div>
+            </div> 
+            <div class="col-xxl-4 col-md-6 col-ms-12 p-1 mt-3 d-flex justify-content-center align-items-center">
+             <div class="box_Resources card border-0 shadow" style="width: 28rem; ">
+                <img class="card-img-top picRecourse" src="https://firststeps.az/wp-content/uploads/2023/11/css.png" alt="..." height="350px" width="200px">
+               <div class="card-body">
+              <h5 class="card-title">Ebook CSS</h5>
+                <p class="card-text">Programming language for web Development.</p>
+                <a class="btn btn-primary" href="https://youtube.com/@LayLonghav?si=OGdJLdy-HdiHGW9m" target="_blank">View</a>
+                 </div>
+            </div>
+            </div>
+            <div class="col-xxl-4 col-md-6 col-ms-12 p-1 mt-3 d-flex justify-content-center align-items-center">
+              <div class="box_Resources card border-0 shadow" style="width: 28rem; ">
+                <img class="card-img-top picRecourse" src="https://play-lh.googleusercontent.com/rfWOJQVBHoAZ_B43v0ySFlLmJBLtksVGAxGaFRh2ex4nOmNQ86qzG4sYWV63IKrXlvI" alt="..." height="350px" width="200px">
+               <div class="card-body">
+              <h5 class="card-title">Ebook Javascript</h5>
+                <p class="card-text">Programming language for web Development.</p>
+                <a class="btn btn-primary" href="https://youtube.com/@LayLonghav?si=OGdJLdy-HdiHGW9m" target="_blank">View</a>
+                 </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane container fade" id="About"> 
+        <div class="text-center  mt-3 text-primary"><h1>About creators</h1></div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xxl-4 col-md-6 col-ms-12 mt-3 d-flex justify-content-center align-items-center">
+                    <div class="card m-0 shadow" style="width:100%;">
+                        <img class="card-img-top" src="../Video/Image/laylonghav.jpg" alt="Card image" style="width:100%; height: 450px; object-fit: cover;">
+                        <div class="card-body">
+                            <h4 class="card-title" h4>lay longhav</h4>
+                            <p class="card-text">Major: Web Developer</p>
+                            <a class="btn btn-primary" href="#">See Profile</a>
+                      </div>
+                    </div>
+            </div> 
+            <div class="col-xxl-4 col-md-6 col-ms-12 mt-3 d-flex justify-content-center align-items-center">
+              <div class="card text-bg-primary shadow" style=" width: 25rem; height: 100%;">
+                <div class="card-header text-center"><h2>Service</h2></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Edite Video</h5>
+                    <h5 class="card-title">Design poster</h5>
+                    <h5 class="card-title">talk photo</h5>
+                    <h5 class="card-title">talk sport</h5>
+                    <h5 class="card-title">Design benner</h5>
+                    <h5 class="card-title">Build website</h5>
+                    <p class="card-text"></p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-md-6 col-ms-12 p mt-3 d-flex justify-content-center align-items-center">
+                <div class="card text-bg-primary shadow" style=" width: 25rem; height: 100%;">
+                <div class="card-header text-center"><h2>Skills</h2></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Graphic Design</h5>
+                    <h5 class="card-title">UX Design</h5>
+                    <h5 class="card-title">UI Design</h5>
+                    <h5 class="card-title">Team Player</h5>
+                    <h5 class="card-title">Design benner</h5>
+                    <h5 class="card-title">Analytical</h5>
+                    <h5 class="card-title">Creative</h5>
+                    <h5 class="card-title">HTML</h5>
+                    <h5 class="card-title">CSS</h5>
+                    <h5 class="card-title">Javascript</h5>
+                    <p class="card-text"></p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>     
+      <div class="container text-secondary" id="See_more">
+        <div class="container-fiuld">
+            <div class="row">
+              <div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-ms-12 d-flex justify-content-center align-items-center mt-3">
+                <iframe class="shadow maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250185.78367521765!2d104.94279679999998!3d11.540889599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31094dd48f8cd5c7%3A0xa336c9b080eed3d3!2sNPIC!5e0!3m2!1sen!2skh!4v1709555590298!5m2!1sen!2skh" width="610" height="490" style="border:2;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>          
+              <div class=" col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-ms-12  bg-infor  mt-3 d-flex justify-content-center align-items-center">
+                <div class="container shadow box_message">
+                <div class="row">
+                  <label class="form-label m-0"><h5 class="font_character">Name</h5></label>    
+                  <div class="col m-0">
+                      <input class="form-control font_character" type="text" aria-label="First name" placeholder="First name">
+                  </div>
+                  <div class="col">
+                    <input class="form-control font_character" type="text" aria-label="Last name" placeholder="Last name">
+                  </div>
+                </div>
+                <div class="mt-3">
+                    <label class="form-label m-0" for="exampleFormControlInput1"><p class="font_character">Email address</p></label>
+                    <input class="form-control font_character" id="exampleFormControlInput1" type="email" placeholder="name@example.com">
+                </div>
+                <div class="mt-3">
+                    <label class="form-label m-0" for="exampleFormControlInput1"><p class="font_character">Phone</p></label>
+                    <input class="form-control font_character" id="exampleFormControlInput3" type="email" placeholder="Number phone">
+                </div>
+                <div class="mt-3">
+                    <label class="form-label m-0" for="exampleFormControlTextarea1"><p class="font_character">More information</p></label>
+                    <textarea class="form-control font_character" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-auto mt-3">
+                  <a class="link" data-action="email" href="mailto:laylonghav2023@Gmail.com"><span class=" footer">
+                    <button class="btn btn_submit m-0 btn-outline-warning font_character" type="submit">Send Message</button>
+                  </span></a>
+                  
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>   
     </div>
+      <div class="tab-pane fade" id="Contact">   
+      <a class="link " href="#bottom">
+        
+          <div class="d-flex justify-content-center align-items-center box_contact bg-secondary-subtle">
+            <div class="text-center">
+              <h1 class="text-primary text-center mb-5">Contact us</h1>
+              <img class="text-center mt-5" src="../Video/Image/Arrow-Down.png" title="Arrow-Down" width="150px" height="150px">
+            </div>
+      </div>    
+      </a>          
+          <div class="box_cnt mt-4 container shadow text-primary d-flex justify-content-center align-items-center">
+            <h3 id="bottom">
+              For inquiries and suggestions you can contact us at: <br>
+              <a class="link" data-action="email" href="mailto:laylonghav2023@Gmail.com">
+                <span class="link footer text-primary">
+                  laylonghav2023@Gmail.com
+                </span>
+              </a>
+            </h3>
+          </div>    
+      </div>   
+      <div class="container-fluid mt-5 d-flex justify-content-center align-items-center bg-primary footer">
+          <div class="row container">
+            <div class="col-lg-4 col-md-6 col-sm-12 p-1 mt-3">
+              <img class="logo_footer" src="../Video/Image/logo_personal.png" alt>
+              <p>© All rights reserved by Computer science 2024<br></p>
+              <p>Privacy Policy
+                </p>
+                <p class="mt-3">
+                  Address: <br>
+                  Building 308, Monivong Blvd, Sangkat Boeung Reang, Khan Daun
+                  Penh
+                </p>             
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 p-1 mt-3">
+                <h3>About us</h3>
+                <p class="mt-4">
+                  Computer science Digital Corporation is a leading learning
+                  information. More information<br><br>
+                  Computer science Courses and Services
+                </p>
+                <a class="link" href="https://t.me/laylonghav" title="Opens in a new window" rel="noopener" target="_blank">
+                  <button class="btnOnline btn btn-outline-success text-light" type="button">Online Course</button>
+                </a>
+            </div>
+            <div class="below_footer col-lg-4 col-md-6 col-sm-12 p-1 mt-3">
+              <h3>On social media</h3>
+              <br>
+              <a href="https://www.facebook.com/laylonghav?mibextid=ZbWKwL" title="Opens in a new window" rel="noopener" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.facebook.com/laylonghav?mibextid=ZbWKwL" title="Opens in a new window" rel="noopener" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://youtube.com/@LayLonghav?si=LT-WCdQpGRZFZsPI" title="Opens in a new window" rel="noopener" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.tiktok.com/@cspuhav?is_from_webapp=1&sender_device=pc" title="Opens in a new window" rel="noopener" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="https://t.me/laylonghavCS" title="Opens in a new window" rel="noopener" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+              <a href="https://github.com/laylonghav" title="Opens in a new window" rel="noopener" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <br>
+              <br>
+              <b>Contact</b><br>
+              <p>
+                <a class="link" data-action="email" href="mailto:laylonghav2023@Gmail.com"><span class=" footer">laylonghav2023@Gmail.com</span></a>
+                <br>0979 266 010
+              </p>           
+            </div>         
+          </div>         
+          </div>
+          <div class=" Message_box container-fluid" id="Icon_msg">
+            <img class=" align" id="liveToastBtn" src="https://icons.iconarchive.com/icons/blackvariant/button-ui-system-apps/64/Messages-2-icon.png" title="Message_box" width="64" height="64">                   
+          </div>         
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div class="toast align-items-center text-bg-primary border-0" id="liveToast" role="alert" aria-atomic="true" aria-live="assertive">
+                <button class="btn-close btn-close-white me-2 m-2 d-flex float-end" data-bs-dismiss="toast" type="button" aria-label="Close"></button>
+                <div class="shadow">
+                <div class="d-flex ">
+                  <div class="toast-body px-5">
+                    Hello! <br>
+                    In case you can't find an answer in our help center,
+                     our superstar support agents will reply in a couple of minutes!                     
+                  </div>
+                </div>
+                <div class="cnt bg-secondary-subtle text-dark px-5 pb-3 ">
+                    <a class="link" href="https://t.me/laylonghavCS" title="Opens in a new window" rel="noopener" target="_blank">
+                      <button class="btn_help btn btn-primary my-2" type="button"><b>Go to help center</b></button><br>
+                    </a>
+                        <p>Contact via messengers <br>
+                        You can contact us through a convenient
+                         messenger or send a message in chat right here!</p> <br>
+                      <div class="above">
+                        <a class="btn_Fac link" href="https://www.facebook.com/laylonghav?mibextid=ZbWKwL" title="Opens in a new window" rel="noopener" target="_blank">
+                          <button class="font_size_btn  btn btn-light m-1" type="button"><i class="fa-brands fa-facebook m-0" style="color: #0091ff; font-size: 20px; display: flex; float: left;"></i>Facebook</button>
+                        </a> 
+                        <a class="btn_Tele link" href="https://t.me/laylonghavCS" title="Opens in a new window" rel="noopener" target="_blank">
+                          <button class="font_size_btn  btn btn-light m-1" type="button"><i class="fa-brands fa-telegram" style="color: #0091ff; font-size: 20px; display: flex; float: left;"></i>Telegram</button>
+                        </a>
+                      </div>
+                      <div class="below">
+                        <a class="btn_Insta link" href="https://www.instagram.com/laylonghav?igsh=MTIxeHN2Yzg4YTNzMA==" title="Opens in a new window" rel="noopener" target="_blank">
+                        <button class="font_size_btn btn btn-light m-1" type="button"><i class="fa-brands fa-instagram" style="color: #da1616; font-size: 20px; display: flex; float: left; "></i>Instagram</button>
+                       </a>
+                        <a class="link btn_Tik" href="https://www.tiktok.com/@cspuhav?is_from_webapp=1&sender_device=pc" title="Opens in a new window" rel="noopener" target="_blank">
+                        <button class="font_size_btn  btn btn-light m-1" type="button"><i class="fa-brands fa-tiktok" style="color: #000000; font-size: 20px; display: flex; float: left;" ></i>Tiktok</button>
+                      </a>
+                    </div>
+                    <a class="link" href="https://t.me/laylonghav" title="Opens in a new window" rel="noopener" target="_blank">
+                      <button class="btn_Open btn btn-primary my-2 d-flex" type="button"><b class="float-start">Open chat</b><b class="d-flex justify-content-end align-items-end"><i class="mt-1 fa-solid fa-angle-right" style="color: #ffffff;"></i></b></button>
+                    </a> 
+                </div>
+              </div>
+            </div>
+          </div>        
+        <div class="index MSG container-fluid position-absolute">
+          <h3>Computer science</h3>
+        </div>
+    </div>         
   </body>
+  <script src="../Javascript/toasts.js"></script>
+  <script src="../Javascript/Navbar.js"></script>
+  <script src="../Javascript/More_Navbar.js"></script>
 </html>
