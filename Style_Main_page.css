@@ -355,6 +355,10 @@
     width: 1060px;
     height: 558px;
   }
+  .font_size_btn {
+    font-size: 12px;
+    width: 95%;
+  }
 }
 
 /*`sm` applies to x-small devices (portrait phones, less than 576px) */
@@ -421,6 +425,16 @@
   .footer {
     font-size: 12px;
     text-align: center;
+  }
+  .font_size_btn {
+    font-size: 10px;
+      width: 95%;
+  }
+  .hav {
+    font-size: 8px;
+  }
+  .longhavv{
+    display: none;
   }
 }
 
@@ -541,15 +555,10 @@
   justify-content: center;
   align-items: center;
   width: 50%;
-
 }
 .btnOnline {
   border: 1px solid white;
 }
 .link {
   text-decoration: none;
-}
-.font_size_btn {
-  width: 95%;
-  font-size: 12px;
 }
